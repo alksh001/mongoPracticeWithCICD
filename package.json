@@ -19,6 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start:server": "node ./backend/app.js"
+    "start:backend": "node ./backend/app.js"
   }
 }
