@@ -25,6 +25,10 @@ app.use((req, res, next) => {
 app.use('/products', productRoutes);
 app.use('/', authRoutes);
 
+app.use('/home', (req, res) => {
+  res.json({msg: "Hi this is ci-cd test"})
+})
+
 db.initdb((err, db) => {
   if (err) {
     console.log(err);

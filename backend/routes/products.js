@@ -103,7 +103,7 @@ router.get('/', (req, res, next) => {
         products.push(p)
       })
       .then(result => {
-        // console.log(result);
+        console.log("result",result);
         res.status(201).json(products);
          
       })
